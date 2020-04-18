@@ -17,7 +17,7 @@
 }
 
 div{
-    width: 85%;
+    /* width: 85%; */
     max-width: 70%;
     margin: 25px auto   ;
 
@@ -28,7 +28,7 @@ div{
     width: 250px;
     height: 25px;
 }
-.nea{
+.nea, .div_radio, .div_check, .div_text_area, .div_submit{
     display: flex;
     flex-direction: column;
 }
@@ -39,4 +39,15 @@ div{
 #name, #email, #number{
     border: 2px solid gray;
     height: 25px;
+}
+
+#text-area{
+    width: inherit;
+    max-width:100%;
+}
+
+#submit{
+    width: inherit;
+    max-width: 100%;
+  
 }
