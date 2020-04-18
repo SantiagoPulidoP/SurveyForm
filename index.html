@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SurveyForm</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="main">
-        <h1 id="title">Welcome to MaxSurvey</h1>
-        <p id="description">We will guide you through your best decitions</p>
+
+        <div class="wrapper">
+            <h1 id="title">Welcome to MaxSurvey</h1>
+            <p id="description">Better decitions, better living</p>
+
+        </div>
 
         <form  id="survey-form">
 
@@ -35,7 +40,7 @@
 
             <!-- Barra desplegable  -->
             <div class="div_select">
-                <p>are you a...?</p>
+                <p>Are you a...?</p>
                 <select name="role" id="dropdown" required>
                     <option disabled selected value> Select current role</option>
                     <option value="student">Student</option>
@@ -49,17 +54,17 @@
         <!-- Radio buttons -->
 
         <div class="div_radio">
-            <p>would you recommend us?</p>
+            <p>Would you recommend us?</p>
             <label>
-                <input type="radio" name="would_recomend"> Maybe
+                <input  value = "maybe" class="input_radio" type="radio" name="would_recomend" >Maybe
             </label>
 
             <label>
-                <input type="radio" name="yes"> Definitely
+                <input value="Definitely" class="input_radio" type="radio" name="yes" >Definitely
             </label>
 
             <label>
-                <input type="radio" name="not">Not Sure
+                <input value="not_sure" class="input_radio" type="radio" name="not" >Not Sure
             </label>
 
         </div>
@@ -70,26 +75,34 @@
                 <p>You have particpated at:</p>
                 <label >
                     <input type="checkbox" value="font-end">
-                    Front-end Projects
+                     Front-end Projects
                 </label>
                 <label>
                     <input type="checkbox" value="back-end">
-                    Back-end projects
+                     Back-end projects
                 </label>
                 <label >
                     <input type="checkbox" value="Data_visualization">
-                    Data visualization
+                     Data visualization
                 </label>
                 <label >
                     <input type="checkbox" value="Challenges">
-                    Challegenges
+                     Challegenges
+                </label>
+                <label >
+                    <input type="checkbox" value="Ml">
+                     Machine Learning
+                </label>
+                <label >
+                    <input type="checkbox" value="Ds">
+                     Data Science
                 </label>
             </div>
 
             <!-- Textarea -->
 
             <div class="div_text_area">
-                <p>Leave us a litle commet, we want to enhance your experiences</p>
+                <p>Leave us a coment, we want to enhance your experience</p>
                 <textarea name="coments" id="text-area" placeholder="Enter your comment here"></textarea>
             </div>
 
