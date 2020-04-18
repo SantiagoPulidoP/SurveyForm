@@ -3,7 +3,8 @@ body{
 }
 
 .main{
-    background-color:  #3498DB;
+    /* background-color:  #3498DB; */
+    background-color: #909497;
     border-radius: 5px;
     width: 100%;
     max-width: 70%;
@@ -90,9 +91,10 @@ input[type=radio], input[type=checkbox]{
     height: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    border: 2px solid gray;
+    background-color: #909497;
+    border: 2px solid black;
     border-radius: 5px;
-
+    font-size: 18px;
     
   
 }
@@ -100,7 +102,8 @@ input[type=radio], input[type=checkbox]{
     margin: 0 60px;
     padding-top: 30px;
     border-radius: 5px;
-    background-color: #AED6F1;
+    /* background-color: #AED6F1; */
+    background-color: #EAEDED;
 }
 .div_submit{
     padding-bottom: 10%;
