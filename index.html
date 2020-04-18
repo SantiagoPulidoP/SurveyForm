@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SurveyForm</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <main class="main">
@@ -12,27 +13,43 @@
 
         <form  id="survey-form">
 
-            <label for="name" id="name-label">Nombre:</label>
-            <input type="text" id=name name="user_name" placeholder="Enter your name">
+            <div class="nea">
+                
+                <label for="name" id="name-label">Nombre:</label>
+                <input type="text" id=name name="user_name" placeholder="Enter your name" required>
+            </div>
 
-            <label for="email" id="email-label" >Email: </label>
-            <input type="email" id="email" placeholder="Enter your email">
- 
-            <label for="number" id="label-number">Age:</label>
-            <input type="number" min="10" max="99" id="number" placeholder="Age">
+            <div class="nea">
+                
+                <label for="email" id="email-label" >Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+     
+            </div>
+
+            <div class="nea">
+
+                <label for="number" id="label-number">Age:</label>
+                <input type="number" min="10" max="99" id="number" placeholder="Age" required>
+
+            </div>
 
             <!-- Barra desplegable  -->
-
-            <select name="role" id="dropdown">
-                <option disabled selected value> Select current role</option>
-                <option value="student">Student</option>
-                <option value="job">Full Time job</option>
-                <option value="learner">Full time learner</option>
-                <option value="prenerNo">Prefer not to say</option>
-                <option value="other">Other</option>
-            </select>
+            <div class="div_select">
+                <p>are you a...?</p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value> Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="prenerNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
         <!-- Radio buttons -->
+
+        <div class="div_radio">
+            <p>would you recommend us?</p>
             <label>
                 <input type="radio" name="would_recomend"> Maybe
             </label>
@@ -45,29 +62,45 @@
                 <input type="radio" name="not">Not Sure
             </label>
 
+        </div>
+
 
             <!-- Checklist -->
-            
-            <label >
-                <input type="checkbox" value="font-end">
-                Front-end Projects
-            </label>
-            <label>
-                <input type="checkbox" value="back-end">
-                Back-end projects
-            </label>
-            <label >
-                <input type="checkbox" value="Data_visualization">
-                Data visualization
-            </label>
-            <label >
-                <input type="checkbox" value="Challenges">
-                Challegenges
-            </label>
+            <div class="div_check">
+                <p>You have particpated at:</p>
+                <label >
+                    <input type="checkbox" value="font-end">
+                    Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" value="back-end">
+                    Back-end projects
+                </label>
+                <label >
+                    <input type="checkbox" value="Data_visualization">
+                    Data visualization
+                </label>
+                <label >
+                    <input type="checkbox" value="Challenges">
+                    Challegenges
+                </label>
+            </div>
 
             <!-- Textarea -->
 
-            <textarea name="coments" id="text-area" placeholder="Enter your comment here"></textarea>
+            <div class="div_text_area">
+                <p>Leave us a litle commet, we want to enhance your experiences</p>
+                <textarea name="coments" id="text-area" placeholder="Enter your comment here"></textarea>
+            </div>
+
+            <!-- Boton de envio -->
+
+            <div>
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
 
 
         </form>
