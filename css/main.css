@@ -1,115 +1,188 @@
-body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
 }
 
-.main{
-    /* background-color:  #3498DB; */
-    background-color: #909497;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 70%;
-    margin: auto;
-    margin-top: 70px;
-    height: 80%;
-    max-height: 50%
+.main {
+  /* background-color:  #3498DB; */
+  background-color: #909497;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 70px;
+  height: 80%;
+  max-height: 50%;
 }
-#title , #description{
-    text-align: center;
-    margin: 0px;
- 
-}
-
-#description{
-    margin-bottom: 30px;
+#title,
+#description {
+  text-align: center;
+  margin: 0px;
 }
 
-div{
-    /* width: 85%; */
-    max-width: 70%;
-    margin: 25px auto   ;
-
-
-}
-#dropdown{
-    display: block;
-    width: 100%;
-    height: 30px;
-    border-radius: 5px;
-    background-color: white;
-    border: 2px solid gray ;
-}
-option{
-    font-family: 'Raleway', sans-serif;
-    padding: 0 2px 1px;
-    height: 10px;
-} 
-
-.nea, .div_radio, .div_check, .div_text_area, .div_submit{
-    display: flex;
-    flex-direction: column;
+#description {
+  margin-bottom: 30px;
 }
 
-#name-label, #email-label, #label-number{
-    margin-bottom: 10px;
-    font-weight: bold;
-    
+div {
+  /* width: 85%; */
+  max-width: 70%;
+  margin: 25px auto;
 }
-p{
-    font-weight: bold;
+#dropdown {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  border: 2px solid gray;
 }
-#name, #email, #number{
-    border: 2px solid gray;
-    height: 25px;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif;
-    padding-left: 5px;
-}
-
-input[type=radio], input[type=checkbox]{
-    transform: scale(1.2);
-    
-}
-.input_radio{
-    margin-right: 10px;
+option {
+  font-family: "Raleway", sans-serif;
+  padding: 0 2px 1px;
+  height: 10px;
 }
 
-.div_radio label, .div_check label{
-    margin-bottom: 7px;
+.nea,
+.div_radio,
+.div_check,
+.div_text_area,
+.div_submit {
+  display: flex;
+  flex-direction: column;
 }
 
-#text-area{
-    width: inherit;
-    max-width:100%;
-    height: 70px;
-    border-radius: 5px;
-    border: 2px solid gray;
+#name-label,
+#email-label,
+#label-number {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+p {
+  font-weight: bold;
+}
+#name,
+#email,
+#number {
+  border: 2px solid gray;
+  height: 25px;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  padding-left: 5px;
 }
 
-#submit{
-    width: inherit;
-    max-width: 100%;
-    height: 40px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    background-color: #909497;
-    border: 2px solid black;
-    border-radius: 5px;
-    font-size: 18px;
-    
-  
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(1.2);
 }
-#survey-form{
-    margin: 0 60px;
+.input_radio {
+  margin-right: 10px;
+}
+
+.div_radio label,
+.div_check label {
+  margin-bottom: 7px;
+}
+
+#text-area {
+  width: inherit;
+  max-width: 100%;
+  height: 70px;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+#submit {
+  width: inherit;
+  max-width: 100%;
+  height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  background-color: #909497;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+}
+#survey-form {
+  margin: 0 60px;
+  padding-top: 30px;
+  border-radius: 5px;
+  /* background-color: #AED6F1; */
+  background-color: #eaeded;
+}
+.div_submit {
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
+.wrapper {
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-top: 0;
     padding-top: 30px;
-    border-radius: 5px;
-    /* background-color: #AED6F1; */
-    background-color: #EAEDED;
-}
-.div_submit{
-    padding-bottom: 10%;
-    padding-top: 5%;
-}
+    font-size: 0.9rem;
+  }
+  .main {
+    padding-bottom: 30px;
+    max-width: 100%;
+    margin-top: 0;
+  }
+  #survey-form {
+    margin: 0 10px;
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+  }
+  .nea,
+  .div_select,
+  .div_radio,
+  .div_check,
+  .div_text_area {
+    max-width: 90%;
+  }
+  label,
+  p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
 
-.wrapper{
-    padding-top: 50px;
+  .div_radio label,
+  .div_check label {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .wrapper {
+    margin-top: 0;
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+  .main {
+    padding-bottom: 60px;
+    max-width: 90%;
+    margin-top: 0;
+  }
+  #survey-form {
+    margin: 0 30px 20px 30px;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+  }
+  .nea,
+  .div_select,
+  .div_radio,
+  .div_check,
+  .div_text_area {
+    max-width: 80%;
+  }
+  label,
+  p {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .div_radio label,
+  .div_check label {
+    font-size: 0.8rem;
+  }
 }
